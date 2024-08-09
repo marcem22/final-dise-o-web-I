@@ -1,0 +1,716 @@
+/* Colores personalizados */
+:root {
+  --color1: #2D3967;
+  --color2: #0084B0;
+  --color3: #F5D41B;
+  --color4: #69A344;
+  --color5: #912631;
+  --color-texto: #0D0D0D;
+
+  --color1-light: #3A4A7C;
+  /* Azul más claro */
+  --color1-dark: #1F2B52;
+  /* Azul más oscuro */
+}
+
+/* Estilo para el body para evitar desbordamiento horizontal */
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: var(--color1) !important;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 18px;
+  /* Ajusta el tamaño de la fuente */
+  padding: 5px 5px;
+  /* Reduce el padding de los enlaces */
+}
+
+.nav-link:hover {
+  color: var(--color2) !important;
+  background-color: #e0e0e0;
+  text-decoration: underline;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.navbar .nav-link {
+  color: var(--color-texto);
+  font-size: 20px;
+  margin-right: 20px;
+  /* Reduce el margen derecho para cada enlace */
+}
+
+.navbar .nav-link:hover {
+  color: var(--color2);
+}
+
+/* Ajusta el padding y margen del contenedor de la barra de navegación para que no sea tan ancho */
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 90px;
+  /* Ajusta la altura mínima de la barra */
+  border-bottom: 3px solid var(--color1-dark);
+  margin-bottom: 40px;
+  /* Ajusta el valor según el espacio que desees */
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 767.98px) {
+  .navbar .nav-link {
+    margin-right: 10px;
+    /* Reduce el margen derecho en pantallas pequeñas */
+  }
+
+  .navbar-nav {
+    justify-content: space-between;
+  }
+}
+
+#search-container {
+  display: none;
+}
+
+.fixed-image {
+
+  margin-top: 20px;
+  width: 100%;
+  height: 400px;
+  /* Ajusta la altura según tu preferencia */
+  overflow: hidden;
+  /* Asegúrate de ocultar cualquier parte de la imagen que desborde */
+  position: relative;
+}
+
+.fixed-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+  object-position: center;
+  /* Muestra la parte central de la imagen */
+
+}
+
+
+.color-bar {
+  background-color: var(--color3);
+  height: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.color-block {
+  background-color: var(--color4);
+  flex-grow: 1;
+  height: 100%;
+}
+
+.color1 {
+  width: 20%;
+  background-color: var(--color1);
+}
+
+.color2 {
+  width: 20%;
+  background-color: var(--color2);
+}
+
+.color3 {
+  width: 20%;
+  background-color: var(--color3);
+}
+
+.color4 {
+  width: 20%;
+  background-color: var(--color4);
+}
+
+.color5 {
+  width: 20%;
+  background-color: var(--color5);
+}
+
+.contenido-adicional {
+  background-color: #fff;
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.contenido-adicional .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contenido-adicional .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido-adicional h3 {
+  margin-bottom: 15px;
+  /* Ajusta el margen según sea necesario */
+  font-weight: semi-bold;
+}
+
+.contenido-adicional ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  /* Añade padding para las viñetas */
+}
+
+.contenido-adicional ul li {
+  margin-bottom: 10px;
+  /* Ajusta el espacio entre los elementos de la lista */
+}
+
+.contenido-adicional a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contenido-adicional a:hover {
+  text-decoration: underline;
+}
+
+.contenido-adicional p {
+  margin-bottom: 15px;
+  /* Ajusta el margen inferior del párrafo */
+}
+
+.contenido-adicional .btn {
+  margin-top: auto;
+  /* Mantén el botón en la parte inferior de la tarjeta */
+}
+
+.contenido-adicional .card-body>*:not(:last-child) {
+  margin-bottom: 10px;
+  /* Añade un margen inferior a todos los elementos excepto el último */
+}
+
+.tarjeta {
+  height: 100%;
+}
+
+.tarjeta .card-body {
+  flex-grow: 1;
+}
+
+.tarjeta {
+  background-color: var(--color2);
+}
+
+.tarjeta h3 {
+  color: white;
+}
+
+.tarjeta ul li {
+  color: #fff;
+}
+
+.tarjeta ul li a {
+  color: #fff;
+}
+
+.tarjeta p {
+  color: #fff;
+}
+
+.tarjeta ul li a:hover {
+  color: var(--color2);
+}
+
+.footer {
+  background-color: var(--color1-dark);
+  color: white;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.footer .address,
+.footer .social-icons {
+  margin-bottom: 10px;
+}
+
+.footer .social-icons a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+  color: var(--color1-light);
+}
+
+.footer .footer-divider {
+  border-top: 4px solid var(--color1-light);
+  margin: 10px 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.contacto-redes {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #007bff;
+}
+
+.redes-sociales i.bi {
+  font-size: 2rem;
+}
+
+.logo-container {
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  margin-block-end: 15px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.navbar-contacto {
+  border-bottom: 1px solid var(--color1);
+}
+
+.navbar-contacto .navbar-brand img {
+  margin-top: 5px;
+}
+
+.title {
+  font-weight: bold;
+  color: var(--color1);
+  font-size: 60px;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid var(--color4);
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+
+.h3-link {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.card-link {
+  color: var(--color2);
+}
+
+.btn-primary {
+  background-color: var(--color1-light);
+  border-color: var(--color1);
+  
+}
+
+.btn-primary:hover {
+  background-color: var(--color3);
+  border-color: var(--color2);
+  color:black;
+}
+
+.my-custom-card {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.my-custom-card .card-body {
+  flex-grow: 1;
+}
+
+link[rel="icon"] {
+  width: 32px;
+  height: 32px;
+}
+
+.page-title {
+  margin-top: 100px;
+  background-color: #f8f9fa;
+  /* Color de fondo suave para destacar el título */
+  padding: 30px 0;
+  /* Espaciado vertical alrededor del título */
+  text-align: center;
+  /* Centra el texto */
+  margin-bottom: 30px;
+  /* Espacio debajo del título */
+}
+
+.page-title h1 {
+  font-size: 2.5rem;
+  /* Tamaño de fuente grande */
+  font-weight: bold;
+  /* Negrita */
+  color: #343a40;
+  /* Color de texto oscuro */
+}
+
+.custom-btn {
+  background-color: var(--color2);
+  color: white;
+}
+
+.custom-btn:hover {
+  background-color: var(--color3);
+  color: black;
+}
+
+@media screen and (max-width: 767px) {
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-top: 150px;
+    margin-bottom: 20px;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+}
+
+.carousel-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.carousel-item {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  border-radius: 15px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+}
+
+.card-title {
+  color: var(--color2);
+  font-weight: bold;
+}
+
+.card-subtitle {
+  color: var(--color4);
+}
+
+.card-text {
+  color: var(--color-texto);
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    margin-top: 100px;
+  }
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.carousel-caption h5 {
+  font-size: 1.2rem;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+}
+
+/* Estilos generales para las secciones */
+section {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+  /* Fondo ligero para destacar las secciones */
+}
+
+section h2 {
+  color: var(--color1);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--color2);
+  padding-bottom: 10px;
+}
+
+section p {
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+section h3 {
+  color: var(--color1);
+  margin-bottom: 10px;
+}
+
+ul.list-group {
+  margin-top: 20px;
+}
+
+ul.list-group-item {
+  background-color: #ffffff;
+  /* Fondo blanco para los elementos de lista */
+  border: 1px solid #e0e0e0;
+  color: var(--color-texto);
+}
+
+ul.list-group-item:hover {
+  background-color: var(--color1-light);
+  color: white;
+}
+
+
+
+.card i {
+
+  font-size: 3rem;
+  /* Ajusta el tamaño del ícono según sea necesario */
+  margin-bottom: 15px;
+  color: #007bff;
+  /* Ajusta el color del ícono según sea necesario */
+}
+
+.card .btn {
+  margin-top: 20px;
+  /* Ajusta el margen superior según sea necesario */
+}
+
+.enlace-rapido {
+  text-decoration: none;
+  color: inherit;
+  /* Mantener el color del enlace */
+}
+
+.enlace-rapido {
+  text-decoration: none;
+  color: var(--color1-dark)
+    /* Mantener el color del enlace */
+}
+
+.enlace-rapido p {
+  transition: color 0.3s, text-decoration 0.3s;
+  text-decoration: none;
+  color: var(--color1-dark);
+  font-weight: 600;
+  margin: 0;
+  /* Asegurarse de que no haya margen adicional */
+}
+
+.enlace-rapido:hover p {
+  text-decoration: underline;
+  color: var(--color2);
+  /* Cambia esto por el color que desees */
+}
+
+#jumbotron {
+  width: 100vw;
+  /* Ocupar todo el ancho de la ventana del navegador */
+  margin-left: calc(-50vw + 50%);
+}
+
+#jumbotron img {
+  width: 100%;
+  height: 400px;
+  /* Puedes ajustar esta altura según tus necesidades */
+  object-fit: cover;
+  /* Recorta la imagen para que se ajuste al contenedor sin distorsionarse */
+}
+
+
+.section-style {
+  position: relative;
+  margin-top: 30px;
+  background-color: #ffffff;
+  /* Fondo blanco para contraste */
+  padding: 40px 20px;
+  /* Espaciado alrededor del contenido */
+  border: none;
+
+  margin-bottom: 0;
+  /* Espaciado inferior para separar de otras secciones */
+}
+
+.section-style h2 {
+  color: var(--color1);
+  /* Color de texto principal */
+  font-size: 2.5rem;
+  /* Tamaño del título */
+  margin-bottom: 20px;
+  /* Espaciado debajo del título */
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  /* Espaciado adicional debajo del título */
+}
+
+.section-style p {
+  color: var(--color-texto);
+  /* Color de texto */
+  line-height: 1.8;
+  /* Espaciado entre líneas para mejorar la legibilidad */
+  font-size: 1rem;
+  /* Tamaño de fuente */
+}
+
+@media (max-width: 767px) {
+  #history {
+    padding: 20px 15px;
+    /* Espaciado ajustado en pantallas más pequeñas */
+  }
+
+  section {
+    padding: 20px 0;
+  }
+}
+
+
+.impact-card {
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* Para asegurar que el contenido esté distribuido uniformemente */
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+
+.impact-container {
+  margin-bottom: 0;
+  /* Ajusta este valor según sea necesario */
+}
+
+.impact-card:hover {
+  background: #f1f1f1;
+  border-color: #d0d0d0;
+}
+
+.impact-card .impact-number {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.impact-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #333;
+  margin: 10px 0;
+  flex-grow: 1;
+  /* Para permitir que el título ocupe espacio extra si es necesario */
+}
+
+
+.impact-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+.row .col-md-4 {
+  margin-bottom: 20px;
+  /* Ajusta el margen inferior para las tarjetas */
+}

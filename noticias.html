@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias-Gobierno de San Juan</title>
+    <link rel="icon" href="imagenesy videos/logosjgobierno.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        .news-container {
+            margin: 30px auto;
+        }
+
+        .news-card {
+            background-color: whitesmoke;
+            color: var(--color3);
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid var(--color1);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            /* Ajusta el ancho máximo de las tarjetas */
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .news-card-image {
+            width: 100%;
+            height: 150px;
+            /* Altura fija para las imágenes */
+            object-fit: cover;
+            /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .news-card-title,
+        .news-card-date,
+        .news-card-content {
+            margin-bottom: 10px;
+        }
+
+
+        /* Modal */
+        .modal-content {
+            border-radius: 5px;
+        }
+
+        .modal-body img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="imagenesy videos/logosjgobierno.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+                aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarS">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="institucional.html">Institucional</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gobierno.html">Gobierno</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="page-title">
+        <div class="container">
+            <h1>NOTICIAS</h1>
+        </div>
+    </section>
+
+    <div class="color-bar">
+        <div class="color-block color1"></div>
+        <div class="color-block color2"></div>
+        <div class="color-block color3"></div>
+        <div class="color-block color4"></div>
+        <div class="color-block color5"></div>
+    </div>
+    <div class="container-fluid news-container">
+        <div class="row">
+            <!-- Tarjeta 1 -->
+            <div class="col-12 col-sm-6 col-md-4  mb-4">
+                <div class="card news-card">
+                    <img src="imagenesy videos/ocuupacionhotelera.jpg" alt="Imagen de la noticia 1"
+                        class="news-card-image">
+                    <h5 class="card-title news-card-title">Finde Extra Largo</h5>
+                    <p class="card-subtitle mb-2 text-muted news-card-date">16/06/2024</p>
+                    <p class="card-text news-card-content">El fin de semana largo dejó 94% de ocupación hotelera en San
+                        Juan</p>
+                    <a href="#" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#modal-noticia1">Leer
+                        más +</a>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal-noticia1" tabindex="-1" aria-labelledby="modal-noticia1-label"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal-noticia1-label">Finde Extra Largo</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="imagenesy videos/ocuupacionhotelera.jpg" alt="Imagen de la noticia 1"
+                                class="news-card-image">
+                            <h5 class="modal-title text-center">Finde Extra Largo</h5>
+                            <p class="card-subtitle mb-2 text-muted news-card-date">16/06/2024</p>
+                            <p class="card-text news-card-content">El Ministerio de Turismo y Cultura, a través del
+                                Departamento de Estadísticas, informó que hubo un 94% de ocupación hotelera en la
+                                provincia. Las actividades culturales estuvieron concentradas en diferentes espacios
+                                como las visitas guiadas en el Teatro del Bicentenario, ferias de emprendedores en el
+                                Auditorio Juan Victoria, feria de artesanías en el Mercado Artesanal y el Concurso y
+                                festival internacional San Juan Canta. Por otra parte, la ocupación en la semana, del 12
+                                al 16 de junio, fue del 83%. Esto se debe a las actividades deportivas como el
+                                Campeonato Panamericano de Ciclismo en Pista y el International Series de Patinaje
+                                Artístico.</p>
+                            <div class="d-flex align-items-center">
+                                <p class="mr-3 mb-0">¡No te pierdas nuestras próximas noticias!</p>
+                                <div class="ml-auto">
+                                    <a href="#" class="text-dark mr-5">
+                                        <i class="fab fa-facebook-f fa-lg"></i>
+                                    </a>
+                                    <a href="#" class="text-dark">
+                                        <i class="fab fa-instagram fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-custom-purple" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="col-12 col-sm-6 col-md-4  mb-4">
+                <div class="card news-card">
+                    <img src="imagenesy videos/antibioticos.jpg" alt="Imagen de la noticia 2" class="news-card-image">
+                    <h5 class="card-title news-card-title">Antibioticos: Uso Correcto</h5>
+                    <p class="card-subtitle mb-2 text-muted news-card-date">16/06/2024</p>
+                    <p class="card-text news-card-content">Usar los antibióticos responsablemente es cuidar la salud de
+                        todos</p>
+                    <a href="#" class="btn btn-primary ">Leer más +</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="col-12 col-sm-6 col-md-4  mb-4">
+                <div class="card news-card">
+                    <img src="imagenesy videos/miel.jpg" alt="Imagen de la noticia 3" class="news-card-image">
+                    <h5 class="card-title news-card-title">Semana de la Miel</h5>
+                    <p class="card-subtitle mb-2 text-muted news-card-date">16/06/2024</p>
+                    <p class="card-text news-card-content">San Juan celebrará la 11° edición de la Semana de la Miel</p>
+                    <a href="#" class="btn btn-primary ">Leer más +</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="col-12 col-sm-6 col-md-4  mb-4">
+                <div class="card news-card">
+                    <img src="imagenesy videos/feria-estación.jpeg" alt="Imagen de la noticia 4"
+                        class="news-card-image">
+                    <h5 class="card-title news-card-title">Feria de Educación</h5>
+                    <p class="card-subtitle mb-2 text-muted news-card-date">16/06/2024</p>
+                    <p class="card-text news-card-content">Feria de Educación, Artes, Ciencias y Tecnología: 19
+                        proyectos pasan a la instancia Provincial</p>
+                    <a href="#" class="btn btn-primary ">Leer más +</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="col-12 col-sm-6 col-md-4  mb-4">
+                <div class="card news-card">
+                    <img src="imagenesy videos/seciti.jpg" alt="Imagen de la noticia 5" class="news-card-image">
+                    <h5 class="card-title news-card-title">Nuevo Concurso</h5>
+                    <p class="card-subtitle mb-2 text-muted news-card-date">16/06/2024</p>
+                    <p class="card-text news-card-content">SECITI invita a participar del concurso nacional de
+                        visualización de datos que se realizara en el mes de agosto.</p>
+                    <a href="#" class="btn btn-primary ">Leer más +</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="col-12 col-sm-6 col-md-4  mb-4">
+                <div class="card news-card">
+                    <img src="imagenesy videos/126dcba8664cb16418119ab1835dfc9f.jpg" alt="Imagen de la noticia 6"
+                        class="news-card-image">
+                    <h5 class="card-title news-card-title">Les Luthiers en San Juan</h5>
+                    <p class="card-subtitle mb-2 text-muted news-card-date">16/06/2024</p>
+                    <p class="card-text news-card-content">Nueva función para “Más tropiezos de Mastropiero”, la
+                        despedida de Les Luthiers</p>
+                    <a href="#" class="btn btn-primary ">Leer más +</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-4 text-start address">
+                    <p>Av. Libertador 750, San Juan, Argentina</p>
+                </div>
+                <div class="col-md-4 text-end social-icons">
+                    <a href="https://twitter.com/" target="_blank" class="text-white me-2"><i
+                            class="bi bi-twitter"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" class="text-white me-2"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="text-white me-2"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://www.whatsapp.com/" target="_blank" class="text-white"><i
+                            class="bi bi-whatsapp"></i></a>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <hr class="footer-divider">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>Derechos de autor &copy; 2024 Gobierno de San Juan. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
