@@ -6,26 +6,18 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Gobierno de San Juan@</title>
-    <link rel="icon" href="logosjgobierno.png" type="image/x-icon">
+    <link rel="icon" href="imagenesy videos/logosjgobierno.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Ajusta el ancho máximo de la tarjeta del formulario */
-        .form-card {
-            border: 1px solid #69A344;
-            /* Color y grosor del borde */
-            border-radius: 10px;
-            /* Esquinas redondeadas */
-            max-width: 500px;
-            /* Ancho máximo de la tarjeta */
-            margin: auto;
-            /* Centra la tarjeta en su contenedor */
-            padding: 20px;
-            /* Padding interno de la tarjeta */
+        .map {
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+            border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            /* Sombra sutil para resaltar el borde */
         }
     </style>
 
@@ -37,7 +29,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="logosjgobierno.png" alt="Logo">
+                <img src="imagenesy videos/logosjgobierno.png" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
                 aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +62,7 @@
 
     <section class="page-title">
         <div class="container">
-            <h1>Comuniquese Con Nosotros</h1>
+            <h1>Comuniquese con nosotros</h1>
         </div>
     </section>
     <div class="color-bar">
@@ -81,14 +73,13 @@
         <div class="color-block color5"></div>
     </div>
     <div class="container">
-
-        <div class="row justify-content-center mt-5 mb-5">
-            <div class="col-md-8 col-lg-6">
+        <div class="row justify-content-between g-3 mt-5 mb-5">
+            <!-- Formulario -->
+            <div class="col-md-6 col-lg-5">
                 <div class="card form-card">
                     <div class="card-body">
-                        <h5 class="card-title mb-4">Agradecemos su interés. Complete el formulario y nos pondremos en
-                            contacto con usted.</h5>
-
+                        <h5 class="card-title mb-4" style="color: black;">Agradecemos su interés.
+                            Complete el formulario y nos pondremos en contacto con usted.</h5>
                         <form>
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nombre:</label>
@@ -102,7 +93,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label">Mensaje:</label>
-                                <textarea class="form-control form-control-lg" id="message" rows="5"
+                                <textarea class="form-control form-control-lg" id="message" rows="3"
                                     placeholder="Ingrese su mensaje"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary w-100">Enviar</button>
@@ -110,12 +101,18 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Mapa -->
+            <div class="col-md-6 col-lg-6">
+                <div class="map-container mt-4">
+                    <iframe src="
+                        https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.544828970612!2d-68.54000392515424!3d-31.536659174206456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96814031c456ec93%3A0xf81d3db636ae0d6e!2sCentro%20C%C3%ADvico%20de%20San%20Juan!5e0!3m2!1ses-419!2sar!4v1723470325381!5m2!1ses-419!2sar""
+                        width="100%" height="460px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
         </div>
-
     </div>
 
-
-    </div>
 
     <footer class="footer">
         <div class="container">
