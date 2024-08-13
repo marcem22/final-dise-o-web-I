@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Areas de Gobierno | Gobierno de San Juan</title>
-    <link rel="icon" href="logosjgobierno.png" type="image/x-icon">
+    <link rel="icon" href="imagenesy videos/logosjgobierno.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
@@ -14,62 +14,60 @@
 
     <link rel="stylesheet" href="style.css">
     <style>
-        .card {
-            background-color: hsl(0, 0%, 100%);
-            color: var(--color);
-            padding: 15px;
-            margin: 10px;
-            text-align: center;
-            border-radius: 5px;
-            border: 2px solid var(--color1);
-            width: 300px;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 260px;
-            display: flex;
-        }
+.card {
+    background-color: hsl(0, 0%, 100%);
+    color: var(--color);
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-        .card a {
+.card h2 {
+    margin-top: 15px;
+    color: var(--color1);
+    font-size: 16px; /* Tamaño de fuente más pequeño */
+    font-weight: bold;
+    text-align: center;
+    overflow: visible;
+    word-break: break-word;
+    white-space: normal;
+}
 
-            margin-bottom: 30px;
-        }
+.card i {
+    font-size: 28px; /* Tamaño de ícono más pequeño */
+    color: var(--color1);
+    margin-bottom: 15px;
+}
 
-        .card h2 {
-            margin-top: 15px;
-            color: var(--color1);
-            font-size: 18px;
-            font-weight: bold;
-            text-align: center;
-            overflow: visible;
-            word-break: break-word;
-            /* Asegura que el texto se rompa en palabras largas */
-            white-space: normal;
-            /* Permite que el texto se ajuste en varias líneas */
+.card a {
+    margin-top: auto; /* Asegura que el botón esté siempre en la parte inferior */
+    padding: 10px 20px; /* Tamaño de botón más pequeño */
+}
 
-        }
+@media only screen and (max-width: 600px) {
+    .card {
+        flex: 0 0 48%; /* Ajusta el ancho para tener dos columnas */
+        margin: 5px; /* Margen más pequeño entre tarjetas */
+    }
 
-        .card i {
-            font-size: 30px;
-            color: var(--color1);
+    .row {
+        justify-content: space-between; /* Asegura el espaciado adecuado entre columnas */
+    }
+}
 
-            /* Ajusta la distancia entre el icono y el botón */
-        }
-
-
-
-        @media only screen and (max-width: 600px) {
-            .card {
-                flex-basis: 100%;
-            }
-        }
-    </style>
+</style>      
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="logosjgobierno.png" alt="Logo">
+                <img src="imagenesy videos/logosjgobierno.png" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
                 aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
@@ -115,66 +113,66 @@
     <section class="content">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card">
-                        <h2>Secretaría de Gobierno y Gestión General de Gabinete</h2>
+                        <h2>Secretaría de gestión general </h2>
                         <i class="bi bi-building"></i> <!-- Icono de Bootstrap 5 -->
                         <a href="enlace_secretaria1.html" class="btn btn-primary ">Ir al sitio</a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card">
-                        <h2>Secretaría de Participación Ciudadana</h2>
-                        <i class="bi bi-people"></i> <!-- Icono de Bootstrap 5 -->
+                        <h2>Secretaría de participación ciudadana</h2>
+                        <i class="bi bi-chat"></i> <!-- Icono de Bootstrap 5 -->
                         <a href="enlace_secretaria2.html" class="btn btn-primary style=" color:white;">Ir al sitio</a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card">
-                        <h2>Secretaría de Economía y Finanzas</h2>
+                        <h2>Secretaría de economía y finanzas</h2>
                         <i class="bi bi-bar-chart"></i> <!-- Icono de Bootstrap 5 -->
                         <a href="enlace_secretaria3.html" class="btn btn-primary ">Ir al sitio</a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card">
-                        <h2>Secretaría de Gestión Ambiental y Sustentabilidad</h2>
+                        <h2>Secretaría de gestión ambiental </h2>
                         <i class="bi bi-recycle"></i> <!-- Icono de Bootstrap 5 -->
                         <a href="enlace_secretaria4.html" class="btn btn-primary ">Ir al sitio</a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card">
-                        <h2>Secretaría de Políticas Sociales</h2>
-                        <i class="bi bi-people"></i> <!-- Icono de Bootstrap 5 -->
+                        <h2>Secretaría de políticas sociales</h2>
+                        <i class="bi bi-heart"></i> <!-- Icono de Bootstrap 5 -->
                         <a href="enlace_secretaria5.html" class="btn btn-primary">Ir al sitio</a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card">
-                        <h2>Secretaría de Planeamiento</h2>
+                        <h2>Secretaría de planeamiento</h2>
                         <i class="bi bi-gear"></i> <!-- Icono de Bootstrap 5 -->
                         <a href="enlace_secretaria6.html" class="btn btn-primary ">Ir al sitio</a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card">
-                        <h2>Secretaría de Transporte</h2>
+                        <h2>Secretaría de transporte</h2>
                         <i class="bi bi-bus-front"></i> <!-- Icono de Bootstrap 5 -->
                         <a href="enlace_secretaria7.html" class="btn btn-primary ">Ir al sitio</a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card">
-                        <h2>Secretaría de Educación</h2>
+                        <h2>Secretaría de educación</h2>
                         <i class="bi bi-mortarboard"></i> <!-- Icono de Bootstrap 5 -->
                         <a href="enlace_secretaria8.html" class="btn btn-primary ">Ir al sitio</a>
                     </div>
                 </div>
                 <!-- Nueva tarjeta -->
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card">
-                        <h2>Secretaría de Cultura</h2>
+                        <h2>Secretaría de cultura</h2>
                         <i class="bi bi-book"></i> <!-- Icono de Bootstrap 5 -->
                         <a href="enlace_secretaria9.html" class="btn btn-primary ">Ir al sitio</a>
                     </div>
