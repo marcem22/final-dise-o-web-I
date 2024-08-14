@@ -521,6 +521,24 @@ link[rel="icon"] {
   border-radius: 10px;
   padding: 10px;
 }
+@media (max-width: 767px) {
+  .carousel-caption {
+    font-size: 14px; /* Reduce el tamaño del texto en pantallas pequeñas */
+    padding: 8px; /* Reduce el padding para ocupar menos espacio */
+    bottom: 10px; /* Aumenta la separación en pantallas pequeñas */
+    left: 5%;
+    right: 5%;
+    width: 90%; /* Ajusta el ancho del caption */
+  }
+
+  .carousel-caption h3 {
+    font-size: 16px; /* Ajusta el tamaño del título */
+  }
+
+  .carousel-caption p {
+    font-size: 12px; /* Ajusta el tamaño del texto descriptivo */
+  }
+}
 
 .navbar-light {
   background-color: #ffffff;
